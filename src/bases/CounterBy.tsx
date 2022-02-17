@@ -23,11 +23,22 @@ export const CounterBy = ({ initialValue = 10 }: Props) => {
   };
 
   return (
-    <>
-        <h1>Counter By: {counter}</h1>
-        <h4>Clicks: {clicks}</h4>
-        <button onClick={() => handleClick(1)}>+1</button>
-        <button onClick={() => handleClick(5)}>+5</button>
-    </>
+    <div style={{ margin: '15px'}}>
+      <h2> useState </h2>
+      <hr />
+      <button
+        style={{ marginRight: '5px' }}
+        onClick={() => handleClick(1)}>
+          +1
+      </button>
+      <button
+        style={{ marginRight: '15px' }}
+        onClick={() => handleClick(5)}>
+          +5
+      </button>
+      <small style={{ marginRight: '15px' }}>Counter By: {counter}</small>
+      <small>Clicks: {clicks}</small>
+      <hr />
+    </div>
   )
 }

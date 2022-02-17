@@ -12,13 +12,17 @@ export const Counter = ({ initialValue }: Props) => {
   };
 
   return (
-    <>
-        <h1>
-            Counter: {counter}
-        </h1>
-        <button onClick={handleClick}>
-          +1
-        </button>        
-    </>
+    <div style={{ margin: '15px'}}>
+      <h2> useState </h2>
+      <hr />
+      <button
+        onClick={handleClick}
+        style={{ marginRight: '15px' }}
+      >
+        +1
+      </button>
+      <small> Counter: {counter} </small>
+      <hr />
+    </div>
   )
 }
